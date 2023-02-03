@@ -1,17 +1,11 @@
 import Link from "next/link";
+import classes from "../styles/page2.module.css";
 
 export default function Page() {
   return (
     <>
-      <div className="page2-div">Page 2</div>
+      <div className={classes.box}>Page 2</div>
       <Link href="/page1">Page 1</Link>
-      <style jsx>{`
-        .page2-div {
-          width: 100px;
-          height: 100px;
-          background-color: red;
-        }
-      `}</style>
     </>
   );
 }
